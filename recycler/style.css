@@ -1,0 +1,19 @@
+body
+{
+  background-color: #fdbd00;
+  color: #ffffff;
+}
+
+.container .jumbotron{
+  background-color: black;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+}
+
+#login
+{
+  background-color:#fdbd00;
+  color: #343025;
+  border: 0px;
+
+}
