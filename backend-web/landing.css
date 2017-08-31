@@ -6,6 +6,20 @@
 {
   color: #383838;
 }
-#active{
+
+.is-active{
   color: #383838;
+}
+
+.navbar-item.is-tab.is-active, .navbar-item.is-tab:hover{
+  color: #383838;
+  border-bottom-color: #383838;
+}
+
+.hero.is-primary .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover{
+  color: #383838;
+}
+
+.navbar-item .is-tab .hide{
+  display: none;
 }
