@@ -23,3 +23,33 @@
 .navbar-item .is-tab .hide{
   display: none;
 }
+
+.box{
+  margin: 0 auto;
+  margin-top: 1.5em;
+  max-width: 60em;
+}
+.content{
+  text-align: center;
+  position: relative;
+  bottom: 1.5em;
+
+}
+ h1{
+   text-align: center;
+   display: inline-block;
+   padding-top:
+ }
+
+ #home
+ {
+   padding-right: 15%;
+ }
+
+ #away
+ {
+   padding-left: 15%;
+ }
+
+
+ 
