@@ -1,12 +1,21 @@
+// var config = {
+//   apiKey: "AIzaSyACMQ-svYix_njUCsVpy8k9zq_2ILamEGc",
+//   authDomain: "fireit-2d2fb.firebaseapp.com",
+//   databaseURL: "https://fireit-2d2fb.firebaseio.com",
+//   projectId: "fireit-2d2fb",
+//   storageBucket: "fireit-2d2fb.appspot.com",
+//   messagingSenderId: "222536224576"
+// };
+// firebase.initializeApp(config);
 var config = {
-  apiKey: "AIzaSyACMQ-svYix_njUCsVpy8k9zq_2ILamEGc",
-  authDomain: "fireit-2d2fb.firebaseapp.com",
-  databaseURL: "https://fireit-2d2fb.firebaseio.com",
-  projectId: "fireit-2d2fb",
-  storageBucket: "fireit-2d2fb.appspot.com",
-  messagingSenderId: "222536224576"
-};
-firebase.initializeApp(config);
+    apiKey: "AIzaSyBPi2aTFGkheZThGXL8ar-grP7Dy8Zz4Uk",
+    authDomain: "projectkap-f30c0.firebaseapp.com",
+    databaseURL: "https://projectkap-f30c0.firebaseio.com",
+    projectId: "projectkap-f30c0",
+    storageBucket: "projectkap-f30c0.appspot.com",
+    messagingSenderId: "924041609143"
+  };
+  firebase.initializeApp(config);
 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {

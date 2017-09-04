@@ -4,7 +4,7 @@
  <head>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <title>Sample</title>
-   <link rel="stylesheet" href="/Users/Opus/node_modules/bulma/css/bulma.css">
+   <link rel="stylesheet" href="bulma/css/bulma.css">
    <link rel="stylesheet" href="landing.css">
    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
  </head>
@@ -69,22 +69,74 @@
         <p>
           <strong>Match 1</strong> <small>@johnsmith</small> <small>31m</small>
         </p>
+        <div class="media-content">
+          <p></p>
+        </div>
+        <div class="media-right" id="downdrop">
+          <i class="fa fa-chevron-down" aria-hidden="true" id="displayer"></i>
+        </div>
+
   </article>
   <article class="media" id='match'>
-            <figure class="media-left">
+            <figure class="media-left" style="margin-left:20px">
               <p class="image is-64x64"><img src="http://bulma.io/images/placeholders/128x128.png" alt="Image"></p>
             </figure>
             <div class="media-content">
               <div class="content">
-                <h1 id='home'>99</h1>
+                <h1 id='home'>0</h1>
                 <h1 id='XXX'><strong>VS</strong></h1>
-                <h1 id='away'>99</h1>
+                <h1 id='away'>0</h1>
               </div>
             </div>
-            <figure class="media-right">
+            <figure class="media-right" style="margin-right:20px">
               <p class="image is-64x64"><img src="http://bulma.io/images/placeholders/128x128.png" alt="Image"></p>
             </figure>
         </p>
+  </article>
+  <article class="media">
+      <div class="file media-left">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fa fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Team 1
+        </span>
+      </span>
+    </label>
+  </div>
+  <div class="media-content">
+    <p style="text-align:center;margin-top:-5px;padding: 0 20px;font-size:30px;color:#383838"></p>
+  </div>
+  <div class="file media-right">
+    <label class="file-label">
+      <input class="file-input" type="file" name="resume">
+      <span class="file-cta">
+        <span class="file-icon">
+          <i class="fa fa-upload"></i>
+        </span>
+        <span class="file-label">
+          Team 2
+        </span>
+      </span>
+    </label>
+  </div>
+  </article>
+  <br>
+  <article style="display:flex">
+    <div class="media-left"; style="margin-left:20px">
+      <i class="fa fa-plus-circle" aria-hidden="true" style="font-size:30px" onclick="document.getElementById('home').innerHTML = parseInt(document.getElementById('home').innerHTML) + 1"></i>
+      <i class="fa fa-minus-circle" aria-hidden="true" style="margin-left:10px;font-size:30px" onclick="document.getElementById('home').innerHTML = parseInt(document.getElementById('home').innerHTML) - 1"></i>
+    </div>
+    <div class="media-content">
+      <p></p>
+    </div>
+    <div class="media-right" style="margin-right:20px">
+      <i class="fa fa-plus-circle" aria-hidden="true" style="font-size:30px" onclick="document.getElementById('away').innerHTML = parseInt(document.getElementById('away').innerHTML) + 1"></i>
+      <i class="fa fa-minus-circle" aria-hidden="true" style="margin-left:10px;font-size:30px" onclick="document.getElementById('away').innerHTML = parseInt(document.getElementById('away').innerHTML) - 1"></i>
+    </div>
   </article>
 </div>
 
@@ -119,4 +171,5 @@
       </div>
     </footer> -->
  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </html>
