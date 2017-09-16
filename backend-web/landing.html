@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="bulma/css/bulma.css">
    <link rel="stylesheet" href="landing.css">
    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
  </head>
  <body>
    <section class="hero is-primary">
@@ -79,7 +80,7 @@
   </article>
   <article class="media" id='match'>
             <figure class="media-left" style="margin-left:20px">
-              <p class="image is-64x64"><img src="http://bulma.io/images/placeholders/128x128.png" alt="Image"></p>
+              <p class="image is-64x64"><img src="http://bulma.io/images/placeholders/128x128.png" alt="Image" id="image1"></p>
             </figure>
             <div class="media-content">
               <div class="content">
@@ -89,7 +90,7 @@
               </div>
             </div>
             <figure class="media-right" style="margin-right:20px">
-              <p class="image is-64x64"><img src="http://bulma.io/images/placeholders/128x128.png" alt="Image"></p>
+              <p class="image is-64x64"><img src="http://bulma.io/images/placeholders/128x128.png" alt="Image" id ="image2"></p>
             </figure>
         </p>
   </article>
@@ -97,9 +98,9 @@
       
     
       <div class="select">
-      <select>
-        <option>Select dropdown</option>
-        <option>Teams1</option>
+      <select id = sel1 onchange="showImage1()">
+        <option>Select Team1</option>
+        
       </select>
       
     
@@ -108,10 +109,10 @@
     <p style="text-align:center;margin-top:-5px;padding: 0 20px;font-size:30px;color:#383838"></p>
   </div>
   <div class="file media-right"  >
-    <div class="select">
-      <select>
-        <option>Select dropdown</option>
-        <option>Teams2</option>
+    <div class="select" >
+      <select id=sel2 onchange="showImage2()" >
+        <option>Select Team2</option>
+        
       </select>
   </div>
   </article>
@@ -166,4 +167,5 @@
     </footer> -->
  </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="firebase.js"></script>
 </html>
