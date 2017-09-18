@@ -8,8 +8,10 @@
    <link rel="stylesheet" href="landing.css">
    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
      <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+     <script src="https://unpkg.com/vue"></script>
  </head>
  <body>
+
    <section class="hero is-primary">
   <div class="hero-body" style="background:#383838">
     <div class="container">
@@ -54,18 +56,21 @@
 
 <!-- Pool Area -->
 
+<div id="app">
+
 <nav class="navbar has-shadow">
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item is-tab is-active" href="#">Pool A</a>
-      <a class="navbar-item is-tab"><i class="fa fa-plus" aria-hidden="true"></i></a>
+      <a class="navbar-item is-tab" @click="clone"><i class="fa fa-plus" aria-hidden="true"></i></a>
     </div>
   </div>
 </nav>
 
 <!-- Match Atricles Recycler -->
 
-<div class="box">
+<div class="box" v-for="item in list">
+  {{item}}
   <article class="media">
         <p>
           <strong>Match 1</strong> <small>@johnsmith</small> <small>31m</small>
@@ -95,15 +100,15 @@
         </p>
   </article>
   <article class="media" >
-      
-    
+
+
       <div class="select">
       <select id = sel1 onchange="showImage1()">
         <option>Select Team1</option>
-        
+
       </select>
-      
-    
+
+
   </div>
   <div class="media-content" style="float: right">
     <p style="text-align:center;margin-top:-5px;padding: 0 20px;font-size:30px;color:#383838"></p>
@@ -112,9 +117,10 @@
     <div class="select" >
       <select id=sel2 onchange="showImage2()" >
         <option>Select Team2</option>
-        
+
       </select>
   </div>
+</div>
   </article>
   <br>
   <article style="display:flex">
@@ -130,9 +136,27 @@
       <i class="fa fa-minus-circle" aria-hidden="true" style="margin-left:10px;font-size:30px" onclick="document.getElementById('away').innerHTML = parseInt(document.getElementById('away').innerHTML) - 1"></i>
     </div>
   </article>
+</div>
+
+</div>
 
 
 <!-- Recycler End -->
+
+
+<script type="text/javascript">
+  var app = new Vue({
+    el : '#app',
+    data:{
+      list: ['1']
+    },
+    methods:{
+      clone(){
+        list.push('1')
+      }
+    }
+  })
+</script>
 
 
 <!-- Collapse Trial  -->
