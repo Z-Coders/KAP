@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.karunya.kemt.ShowData"
+    android:orientation="vertical">
+
+    <com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+
+     android:id="@+id/show_data_recycler_view">
+
+ </com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+   <RelativeLayout
+
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+
+
+
+
+       >
+
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true">
+          android:clickable="true"
+          <android.support.v7.widget.CardView
+              android:layout_width="0dp"
+              android:layout_marginLeft="8dp"
+              android:layout_marginRight="8dp"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+
+              android:layout_weight="1"
+              android:layout_gravity="center_vertical"
+
+              >
+
+              <ImageView
+                android:id="@+id/thumbnail1"
+android:padding="7dp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:src="@drawable/games"
+                  android:clickable="true"
+                  android:onClick="matches"
+                  android:scaleType="fitStart"
+                  android:adjustViewBounds="true"
+                  />
+          </android.support.v7.widget.CardView>
+<android.support.v7.widget.CardView
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    >
+
+    <ImageView
+        android:padding="7dp"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="info"
+
+        android:src="@drawable/info"
+
+
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true" />
+</android.support.v7.widget.CardView>
+
+
+         </LinearLayout>
+   </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>

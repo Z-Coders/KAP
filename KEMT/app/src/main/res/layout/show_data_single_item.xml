@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+
+
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/linear_card"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:paddingBottom="17dp"
+
+
+         >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8px"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="live"
+
+                            android:textAllCaps="true"
+                            android:padding="2dp"
+
+                            android:textSize="13dp"
+                            android:textColor="@color/cardview_light_background"
+                            android:background="@color/colorPrimary1"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:id="@+id/live"
+
+
+                            /></android.support.v7.widget.CardView>
+
+            <ImageView
+
+                android:id="@+id/iconCard"
+                android:src="@drawable/download"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+           android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <ImageView
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:src="@drawable/k"
+
+               android:id="@+id/fetchImage1"/>
+
+
+           </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="0"
+                android:layout_gravity="center"
+                android:textSize="70px"
+                android:textStyle="bold"
+                android:id="@+id/Score1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vs"
+                android:layout_gravity="center"
+                android:textSize="60px"
+                android:padding="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:textSize="70px"
+                android:id="@+id/Score2"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"> <ImageView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/k"
+                android:id="@+id/fetchImage2"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:paddingTop="10px"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="location"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/place" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+

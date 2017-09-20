@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "1002472154548",
+    "firebase_url": "https://showdata-14add.firebaseio.com",
+    "project_id": "showdata-14add",
+    "storage_bucket": "showdata-14add.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002472154548:android:375d8df81d173fa6",
+        "android_client_info": {
+          "package_name": "com.bluebox.vedha.showdata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002472154548-hcb7k2c9t88qb2fsq3i47t7j1j16i4eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE3n1aGdnXP3NsjG0wSZGPXBg66DeQPoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002472154548:android:84ba42fb14c028e0",
+        "android_client_info": {
+          "package_name": "com.karunya.kemt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002472154548-hcb7k2c9t88qb2fsq3i47t7j1j16i4eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDE3n1aGdnXP3NsjG0wSZGPXBg66DeQPoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
